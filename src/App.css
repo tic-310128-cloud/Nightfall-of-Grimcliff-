@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+/*Tipografia y Fondo*/
+body {
+  background-color: #fdfbf7;
+  font-family: 'Quicksand', sans-serif;
+  color: #2c221e;
+}
+
 /* Reseteo básico */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Fondo */
-body {
-  background-color: #fdfbf7;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  color: #2c221e;
 }
 
 /* Contenedor principal para centrar la tarjeta */
