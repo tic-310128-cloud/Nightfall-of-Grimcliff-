@@ -1,0 +1,191 @@
+/* Reseteo básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo */
+body {
+  background-color: #fdfbf7;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #2c221e;
+}
+
+/* Contenedor principal para centrar la tarjeta */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* Tarjeta principal */
+.card {
+  width: 100%;
+  max-width: 680px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(200, 90, 50, 0.1);
+  padding: 36px;
+  border: 1px solid #f2ebe1;
+}
+
+/* Encabezado */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f7f1e8;
+}
+
+
+.header-title {
+  color: #2c221e;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.header-subtitle {
+  color: #8c7a6b;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+/* Lista de Recetas */
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 28px;
+  background: #fffdf9;
+  border: 2px solid #f0e6d8;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.recipe-card-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Alineación de las listas */
+ul, ol {
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+/* Bordes laterales de color según el tipo de receta */
+.btn-pastel {
+  border-left: 8px solid #c85a32;
+}
+
+.btn-limon {
+  border-left: 8px solid #2e6f40;
+}
+
+.recipe-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c221e;
+}
+
+/* Etiquetas de categoría */
+.badge-tag {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.badge-pastel {
+  background-color: #fdf0ec;
+  color: #c85a32;
+}
+
+.badge-limon {
+  background-color: #e8f3eb;
+  color: #2e6f40;
+}
+
+/* Detalle de Receta */
+.recipe-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2c221e;
+  margin-bottom: 12px;
+}
+
+.recipe-description {
+  font-size: 16px;
+  color: #5a4a42;
+  line-height: 1.6;
+  background-color: #fffbf7;
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 5px solid #c85a32;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #2c221e;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.custom-list {
+  padding-left: 24px;
+  font-size: 16px;
+  color: #423630;
+  line-height: 1.7;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+/* Botón Regresar */
+.btn-regresar {
+  width: 100%;
+  margin-top: 30px;
+  padding: 18px;
+  background-color: #c85a32;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(200, 90, 50, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-regresar:hover {
+  background-color: #b24d28;
+  transform: translateY(-2px);
+}
+
