@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap');
 
-/*Tipografia y Fondo*/
-body {
-  background-color: #fdfbf7;
-  font-family: 'Quicksand', sans-serif;
-  color: #2c221e;
-}
-
-/* Reseteo básico */
+/* Reseteo básico y forzar tipografía en absolutamente todo */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand', sans-serif !important; 
+}
+
+/* Fondo global */
+body {
+  background-color: #fdfbf7;
+  color: #2c221e;
+  overflow-x: hidden;
 }
 
 /* Contenedor principal para centrar la tarjeta */
@@ -42,7 +43,6 @@ body {
   border-bottom: 2px solid #f7f1e8;
 }
 
-
 .header-title {
   color: #2c221e;
   font-size: 32px;
@@ -53,6 +53,7 @@ body {
   color: #8c7a6b;
   font-size: 16px;
   margin-top: 6px;
+  font-weight: 500;
 }
 
 /* Lista de Recetas */
@@ -88,7 +89,7 @@ ul, ol {
   margin-bottom: 20px;
 }
 
-/* Bordes laterales de color según el tipo de receta */
+/* Bordes laterales de color según el tipo de receta (Pantalla 1) */
 .btn-pastel {
   border-left: 8px solid #c85a32;
 }
@@ -124,14 +125,16 @@ ul, ol {
   color: #2e6f40;
 }
 
-/* Detalle de Receta */
+/* Detalle de Receta (Pantalla 2) */
 .recipe-title {
   font-size: 28px;
   font-weight: 800;
   color: #2c221e;
   margin-bottom: 12px;
+  text-align: center;
 }
 
+/* Descripción limpia */
 .recipe-description {
   font-size: 16px;
   color: #5a4a42;
@@ -139,8 +142,10 @@ ul, ol {
   background-color: #fffbf7;
   padding: 16px;
   border-radius: 12px;
-  border-left: 5px solid #c85a32;
+  border: 1px solid #f2ebe1; 
+  border-left: none;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .section-title {
@@ -149,6 +154,7 @@ ul, ol {
   color: #2c221e;
   margin-top: 24px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .custom-list {
@@ -190,4 +196,3 @@ ul, ol {
   background-color: #b24d28;
   transform: translateY(-2px);
 }
-
