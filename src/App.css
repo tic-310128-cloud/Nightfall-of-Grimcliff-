@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap');
 
-/* Reseteo básico y forzar tipografía en absolutamente todo */
+/* Reseteo básico y aplicación de tipografía en todo */
 * {
   box-sizing: border-box;
   margin: 0;
